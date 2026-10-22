@@ -10,6 +10,8 @@ Personal portfolio site for **Santhiya Suntharesan**, B2B Marketing & Analytics 
 | --- | --- |
 | `index.html` | The whole site: content, styles and scripts in one file. GitHub Pages serves it as the home page. |
 | `README.md` | This file. Shown on GitHub, not on the site. |
+| `favicon.ico`, `favicon.svg`, `favicon-32x32.png` | Browser tab icon (the four-shape graphic). |
+| `apple-touch-icon.png` | Icon used when the site is saved to an iPhone or iPad home screen. |
 
 The site is a single static HTML page hosted on GitHub Pages. There's no build step. Whatever is in `index.html` on the `main` branch is what goes live.
 
