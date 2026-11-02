@@ -211,7 +211,14 @@ footer{background:var(--ink); color:#B9BED3}
 footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:.5rem 2rem; padding-block:1.75rem; border-top:1px solid rgba(247,246,240,.2); font-family:var(--mono); font-size:.74rem}
 
 /* Hero intro + About fun fact */
-.intro{display:grid; gap:.6rem}
+.intro{display:grid; gap:.9rem}
+.intro p:not(.lede){color:var(--muted); max-width:62ch; font-size:clamp(1rem,1.4vw,1.08rem)}
+.intro .lede{color:var(--fg)}
+.intro .areas-label{font-family:var(--mono); font-size:.8rem; letter-spacing:.06em; text-transform:uppercase; color:var(--fg); margin-top:.3rem}
+.expertise{list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.45rem 1.5rem; max-width:62rem; color:var(--muted); font-size:clamp(.95rem,1.3vw,1.02rem)}
+@media (max-width:640px){ .expertise{grid-template-columns:minmax(0,1fr)} }
+.expertise li{position:relative; padding-left:1.25rem}
+.expertise li::before{content:""; position:absolute; left:0; top:.5em; width:.5rem; height:.5rem; background:var(--hi); transform:rotate(45deg)}
 .about-body{display:grid; gap:1.75rem}
 .funfact{margin-top:clamp(2rem,4vw,3rem); color:var(--ink); max-width:62ch; padding:1.1rem 1.25rem; background:var(--white); border:3px solid var(--ink); box-shadow:5px 5px 0 var(--sun); font-size:1.02rem}
 .funfact em{font-style:normal; font-family:var(--mono); font-size:.92em; background:var(--sun); padding:.05em .35em}
@@ -274,7 +281,20 @@ body.no-scroll{overflow:hidden}
         </div>
         <h1>Bridging marketing strategy and data to <em>drive growth.</em></h1>
         <div class="intro">
-          <p class="lede">Hi, I'm Santhiya! I'm a B2B marketer with 6+ years of experience across campaigns, marketing automation and performance analytics. I plan multi-channel programs, then use funnel and attribution data to shift spend toward what converts.</p>
+          <p class="lede">Hi, I'm Santhiya! I'm a marketing analytics and performance marketing leader who leverages campaign strategy and deep platform data to create the best possible business outcomes.</p>
+          <p>My work sits at the intersection of performance marketing, marketing operations, and technical analytics. I specialize in understanding what actually drives growth: optimizing campaign spend, clarifying how each channel contributes to acquisition, and turning messy platform metrics into clear strategic direction for leadership and growth teams.</p>
+          <p>At Trimble, I grew from executing B2B campaigns, events, and product launches to managing the Salesforce Marketing Cloud Account Engagement (Pardot) platform and leading multi-channel marketing analytics. I analyzed performance across Google Ads, Meta, LinkedIn, and native platforms to improve ROAS and lower cost per lead. I also built first-touch and last-touch attribution models to map the customer journey from discovery to conversion, and automated reporting in Domo and Looker Studio so stakeholders had real-time visibility into full-funnel performance.</p>
+          <p class="areas-label">Areas of expertise include:</p>
+          <ul class="expertise">
+            <li>Performance marketing and multi-channel campaign optimization</li>
+            <li>Attribution modelling and customer journey mapping</li>
+            <li>Funnel analysis and ROAS optimization</li>
+            <li>A/B testing and experimentation</li>
+            <li>Marketing automation, lead nurturing, and segmentation</li>
+            <li>Marketing dashboards, metric definition, and executive reporting</li>
+            <li>SQL, Python, and marketing platform data extraction</li>
+            <li>Data governance, ETL pipelines, and CRM data quality</li>
+          </ul>
         </div>
         <div class="btns">
           <a class="btn primary" href="#work">See my work</a>
