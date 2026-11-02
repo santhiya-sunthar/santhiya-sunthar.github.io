@@ -1,6 +1,6 @@
 # santhiya-sunthar.github.io
 
-Personal portfolio site for **Santhiya Suntharesan**, B2B Marketing & Analytics Professional, Toronto area.
+Personal portfolio site for **Santhiya Suntharesan**, B2B Marketing & Analytics, Toronto area.
 
 **Live site:** https://santhiya-sunthar.github.io
 
