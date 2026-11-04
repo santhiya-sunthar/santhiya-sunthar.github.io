@@ -222,7 +222,8 @@ h3{font-size:1.4rem; font-weight:800; letter-spacing:-.025em; line-height:1.15}
 .life .card:nth-child(1){background:var(--sun); --line:var(--ink); --fg:var(--ink); --muted:#2B2F45; color:var(--ink)}
 .life .card:nth-child(2){background:var(--ruby)}
 .life .card:nth-child(3){background:var(--paper); --line:var(--ink); --fg:var(--ink); --muted:#3D4461; color:var(--ink)}
-.life .card:nth-child(4){background:var(--ink)}
+.life .grid4{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){ .life .grid4{grid-template-columns:minmax(0,1fr)} }
 
 /* Contact */
 .contact h2{font-size:clamp(2.6rem,7vw,5.4rem)}
@@ -533,7 +534,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <article class="card"><h3>Behind the camera</h3><p>Photography is how I practise noticing details. I even built my own offline photo gallery app in Python and Flask to organize my shots.</p></article>
         <article class="card"><h3>Design nerd</h3><p>Layout, type and colour matter to me, in a dashboard or anywhere else. Good design is just clear communication.</p></article>
         <article class="card"><h3>Learning <span class="tip" tabindex="0" aria-describedby="tamil-tip">Tamil<span class="tip-bubble" role="tooltip" id="tamil-tip"><strong>Fun fact:</strong> Tamil is one of the oldest surviving classical languages with a continuous, unbroken literary and spoken tradition dating back over 2,000 years.</span></span></h3><p>Currently mastering the compound letters, one quiz at a time.</p></article>
-        <article class="card"><h3>Analog planner, digital analyst</h3><p>My week lives in a Hobonichi Weeks planner. Some things are better on paper.</p></article>
       </div>
       <p class="funfact"><strong>Fun fact:</strong> Spell-check and Siri have never gotten my name right. Think you can beat them? It's spelled <strong>Santhiya Suntharesan</strong> and pronounced <em>san-THEE-yuh suun-tha-RAY-sen</em>. My money's on you.</p>
     </div>
@@ -542,10 +542,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="ticker" aria-label="In a few words">
     <div class="ticker-track">
       <ul>
-        <li>Photographer</li><li>Design nerd</li><li>Analog planner</li><li>Marketer</li><li>Data science lover</li><li>Technophile</li><li>AI power-user</li><li>Bookworm</li><li>DIY-er</li><li>Runner</li><li>Meme aficionado</li><li>Endlessly curious</li><li>Foodie</li><li>Go-getter</li><li>People person</li>
+        <li>Photographer</li><li>Design nerd</li><li>Marketer</li><li>Data science lover</li><li>Technophile</li><li>AI power-user</li><li>Bookworm</li><li>DIY-er</li><li>Runner</li><li>Meme aficionado</li><li>Endlessly curious</li><li>Foodie</li><li>Go-getter</li><li>People person</li>
       </ul>
       <ul aria-hidden="true">
-        <li>Photographer</li><li>Design nerd</li><li>Analog planner</li><li>Marketer</li><li>Data science lover</li><li>Technophile</li><li>AI power-user</li><li>Bookworm</li><li>DIY-er</li><li>Runner</li><li>Meme aficionado</li><li>Endlessly curious</li><li>Foodie</li><li>Go-getter</li><li>People person</li>
+        <li>Photographer</li><li>Design nerd</li><li>Marketer</li><li>Data science lover</li><li>Technophile</li><li>AI power-user</li><li>Bookworm</li><li>DIY-er</li><li>Runner</li><li>Meme aficionado</li><li>Endlessly curious</li><li>Foodie</li><li>Go-getter</li><li>People person</li>
       </ul>
     </div>
   </div>
